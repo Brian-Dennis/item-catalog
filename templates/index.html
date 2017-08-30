@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<div class="jumbotron text-center">
+		<h1>Welcome to Articles Catalog</h1>
+		<p class="lead">This application is built with Python Flask Framework and is the framework that drives this application.</p>
+		{% if session.logged_in == NULL %}
+			<a class="btn btn-primary" href="/register">Register</a>
+			<a class="btn btn-success" href="/login">Login</a>
+		{% endif %}
+	</div>
+{% endblock %}
