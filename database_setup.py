@@ -27,7 +27,7 @@ class Articles(Base):
     description = Column(String(250), nullable=False)
     author = Column(String(250), nullable=False)
     create_date = Column(String(250))
-    user_id = Column(Integer, ForeignKey('user.id'))
+    user_id = Column(Integer, ForeignKey('users.id'))
     user = relationship(Users)
 
 
